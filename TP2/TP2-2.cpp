@@ -12,7 +12,8 @@ int main(){
         mesActual = now->tm_mon + 1, 
         anioActual = now->tm_year + 1900, 
         dia,mes,anio;
-    cout << "a. Realizar un programa que pida la fecha de nacimiento y nos de la edad" << endl;
+
+    cout << "\033[33m" << "a. Realizar un programa que pida la fecha de nacimiento y nos de la edad" << "\033[0m" << endl;
     cout << "Ingrese su fecha de nacimiento" << endl;
     cout << "Dia: ";
     cin >> dia;
@@ -30,18 +31,19 @@ int main(){
         cout << "Su edad es " << (anioActual - anio) -1 << endl;
     }
 
-    cout << "b. Realizar un programa que pida 3 datos y nos devuelva el promedio" << endl;
-    float b1, b2, b3;
+    cout << "\033[33m" << "b. Realizar un programa que pida 3 datos y nos devuelva el promedio" << "\033[0m" << endl;
+    float b1, b2, b3, b_resultado;
     cout << "Ingrese el valor 1: ";
     cin >> b1;
     cout << "Ingrese el valor 2: ";
     cin >> b2;
     cout << "Ingrese el valor 3: ";
     cin >> b3;
-    cout << "El promedio es " << ( b1 + b2 + b3 ) / 3 << endl;
+    b_resultado = ( b1 + b2 + b3 ) / 3;
+    cout << "El promedio es " << floor(b_resultado * 100) / 100 << endl;
 
-    cout << "c. Realizar un programa que pida 4 datos y devuelva el producto de ellos" << endl;
-        float c1, c2, c3, c4;
+    cout << "\033[33m" << "c. Realizar un programa que pida 4 datos y devuelva el producto de ellos" << "\033[0m" << endl;
+    float c1, c2, c3, c4;
     cout << "Ingrese el valor 1: ";
     cin >> c1 ;
     cout << "Ingrese el valor 2: ";
@@ -51,17 +53,17 @@ int main(){
     cout << "Ingrese el valor 4: ";
     cin >> c4;
     cout << "El producto es " << c1 * c2 * c3 * c4 << endl;
-    cout << "";
-    cout << "El ejercicio D y E ya fueron resueltos en el TP anterior.." << endl;
-    cout << "";
-    cout << "f. Convertir de Gradios " << "\xF8" <<  "F a " << "\xF8" << "C" << endl;
+
+    cout << "\033[31m" << "El ejercicio D y E ya fueron resueltos en el TP anterior.." << "\033[0m" << endl;
+
+    cout << "\033[33m" << "f. Convertir de Gradios " << "\xF8" <<  "F a " << "\xF8" << "C" << "\033[0m" << endl;
     float grados_f = 0, grados_c = 0;
-    cout << "Ingrese cantidad de grados" << "\xF8" << "F: ";
+    cout << "Ingrese cantidad de grados " << "\xF8" << "F: ";
     cin >> grados_f;
     grados_c = (grados_f - 32) * 5 / 9;
     cout << "Equivale a " << floor(grados_c * 100) / 100  << "\xF8" << "C" << endl;
     
-    cout << "g. Ingrese un tiempo en segundos";
+    cout << "\033[33m" << "g. Ingrese un tiempo en segundos: " << "\033[0m";
     int num, hor ,minu ,seg;
     cin >> num;
     hor = (num / 3600);
