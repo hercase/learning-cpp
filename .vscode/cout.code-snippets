@@ -1,0 +1,18 @@
+{
+	"cout": {
+		"scope": "cpp",
+		"prefix": "cout",
+		"body": [
+			"cout << $1;",
+		],
+		"description": "Create cout"
+	},
+	"cin": {
+		"scope": "cpp",
+		"prefix": "cin",
+		"body": [
+			"cin >> $1;",
+		],
+		"description": "Create cin"
+	}
+}

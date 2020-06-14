@@ -10,7 +10,7 @@ int main () {
     cout << "c. La division de 46 y 3 es " << 46 / 3 << endl;
     cout << "" << endl;
     cin.ignore();
-    // clrscr
+    // Clear Screen
     cout << "\033[2J\033[1;1H";
     cout << "Unidad 2" << endl;
     cout << "Ejercicio 2." << endl;
