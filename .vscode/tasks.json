@@ -6,7 +6,7 @@
         {
             "type": "shell",
             "label": "g++ build active file",
-            "command": "/usr/bin/g++",
+            "command": "C:/MinGW/bin/g++",
             "args": [
                 "-g",
                 "${file}",
@@ -14,7 +14,7 @@
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
-                "cwd": "/usr/bin"
+                "cwd": "C:/MinGW/bin"
             },
             "problemMatcher": [
                 "$gcc"
