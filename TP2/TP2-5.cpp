@@ -3,17 +3,6 @@
 #include <stdio.h>
 #include <cmath>
 
-//Para usar colores si es la terminal de linux.
-#ifdef __unix__                    /* __unix__ is usually defined by compilers targeting Unix systems */
-  #define OS_Windows 0
-#elif defined(_WIN32) || defined(WIN32)     /* _Win32 is usually defined by compilers targeting 32 or   64 bit Windows systems */
-  #define OS_Windows 1
-#endif
-
-//Colores
-#define YELLOW "\033[33m"      /* Yellow */
-#define RESET "\033[0m"
-
 using namespace std;
 
 // Limpia pantalla.
