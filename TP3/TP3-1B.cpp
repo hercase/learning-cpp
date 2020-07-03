@@ -49,15 +49,15 @@ string menuClases(){ //selector de clase de vuelo
   int op;
   string desc_clase;
   
-  while ( op == 0 || op > 3 ){
+  do {
     clrscr();
     cout << "Categorias de vuelo\n";
-    cout << "1 - Primera Clase \n";
-    cout << "2 - Clase Business \n";
-    cout << "3 - Clase Economica \n";
+    cout << "1. Primera Clase \n";
+    cout << "2. Clase Business \n";
+    cout << "3. Clase Economica \n";
     cout << "Elija una clase: ";
     cin >> op;
-  }
+  } while ( op == 0 || op > 3 );
   
   op -= 1;
   
@@ -79,8 +79,8 @@ string menuAeropuerto(bool isOrigen){
   string desc;
   //Código Aeropuerto
   clrscr();
-  while ( op == 0 || op > 7 ){
 
+  do {
   if ( isOrigen ){
   cout << "-- Aeropuerto de origen --\n";
   } else {
@@ -97,9 +97,9 @@ string menuAeropuerto(bool isOrigen){
   cout << "Elija una opcion: ";
   cin >> op;
   clrscr(); 
-  }
-    switch ( op -= 1 )
-  {
+  } while ( op == 0 || op > 7 );
+
+  switch ( op -= 1 ){
     case BHI:
     desc = "Bahia Blanca";
     break;

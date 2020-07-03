@@ -50,14 +50,14 @@ string menuMozos(){
   clrscr();
   typedef enum { ROMINA, GONZALO, HERNAN, FRANCO, CAMILA } tMozos;
   string desc;
-  int opcion = 99;
+  int opcion;
 
   // Evita el ingreso de valores que no existen.
-  while( opcion == 0 || opcion > 5){
+  do {
     clrscr();
     cout << "Ingrese codigo de mozo: ";
     cin >> opcion;
-  }
+  } while ( opcion == 0 || opcion > 5);
 
   switch(opcion -= 1){
     case ROMINA:
@@ -88,14 +88,14 @@ string menuMesas(){
   clrscr();
   typedef enum { Mesa1, Mesa2, Mesa3, Mesa4, Mesa5 } tMesas; 
   string desc;
-  int opcion = 99;
+  int opcion;
 
   // Evita el ingreso de valores que no existen.
-  while( opcion == 0 || opcion > 5){
+  do {
     clrscr();
     cout << "Ingrese numero de mesa: ";
     cin >> opcion;
-  }
+  } while( opcion == 0 || opcion > 5);
 
   switch(opcion - 1){
     case Mesa1:
@@ -138,21 +138,21 @@ string fechaActual(){
 string menuEntrada(){
   clrscr();
   typedef enum { EMPANADAS, ENSALADA, FIAMBRES, RABAS, PAPAS } tEntrada;
-  int opcion = 99;
+  int opcion;
   string desc;
 
   // Evita el ingreso de valores que no existen.
-  while( opcion == 0 || opcion > 5){
-  clrscr();
-  cout << "-- Platos de entrada --\n";
-  cout << "1) Empanadas de carne\n";
-  cout << "2) Ensalada Rusa \n";
-  cout << "3) Picada \n";
-  cout << "4) Porcion de rabas \n";
-  cout << "5) Porcion de papas fritas \n";
-  cout << "Seleccione un plato de entrada: ";
-  cin >> opcion;
-  }
+  do {
+    clrscr();
+    cout << "-- Platos de entrada --\n";
+    cout << "1) Empanadas de carne\n";
+    cout << "2) Ensalada Rusa \n";
+    cout << "3) Picada \n";
+    cout << "4) Porcion de rabas \n";
+    cout << "5) Porcion de papas fritas \n";
+    cout << "Seleccione un plato de entrada: ";
+    cin >> opcion;
+  } while( opcion == 0 || opcion > 5);
 
   switch (opcion - 1){
     case EMPANADAS:
@@ -182,11 +182,11 @@ string menuEntrada(){
 string menuPrincipal(){
   clrscr();
   typedef enum { MILANESAS, ARROZ, PASTAS, POLLO, SORRENTINOS } tPrincipal;
-  int opcion = 99;
+  int opcion;
   string desc;
 
   // Evita el ingreso de valores que no existen.
-  while( opcion == 0 || opcion > 5){
+  do {
   clrscr();
   cout << "-- Platos Principal --\n";
   cout << "1) Milanesas napolitana \n";
@@ -196,7 +196,7 @@ string menuPrincipal(){
   cout << "5) Sorrentinos con 4 quesos \n";
   cout << "Seleccione un plato principal: ";
   cin >> opcion;
-  }
+  } while( opcion == 0 || opcion > 5);
 
   switch(opcion - 1){
     case MILANESAS:
@@ -227,10 +227,10 @@ string menuPostre(){
   clrscr();
   typedef enum { HELADO, FLAN, GELATINA, QUESO, TORTA } tPostre;
   string desc;
-  int opcion = 99;
+  int opcion;
 
   // Evita el ingreso de valores que no existen.
-  while( opcion == 0 || opcion > 5){
+  do {
     clrscr();
     cout << "-- Postres --\n";
     cout << "1) Helado \n";
@@ -240,10 +240,9 @@ string menuPostre(){
     cout << "5) Torta \n";
     cout << "Seleccione un postre: ";
     cin >> opcion;
-  }
+  } while( opcion == 0 || opcion > 5);
 
   switch (opcion - 1){
-
     case HELADO:
       desc = "Helado de chocolate y vainilla";
       break;
