@@ -22,8 +22,8 @@ Código Aeropuerto
 6. San Fernando del Valle de Catamarca-CTC
 7. Comodoro Rivadavia-CRD 
 */
-  enum tClases { first, business, economy } ;
-  enum tAeropuerto { BHI, AEP, EPA, EZE, BRC, CTC, CRD } ;
+  typedef enum { first, business, economy } tClases ;
+  typedef enum { BHI, AEP, EPA, EZE, BRC, CTC, CRD }tAeropuerto;
 
   int op;
 
