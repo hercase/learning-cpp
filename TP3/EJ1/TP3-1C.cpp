@@ -24,7 +24,7 @@ int main (){
       tomates = 0,
       sandias = 0,
       peras = 0;
-
+      
 // Para almezaner los valores y despues mostrarlos, primero guardo los resultados de las funciones en sus variables.
 proveedor = codProveedor();
 social = rSocial();
