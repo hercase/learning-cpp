@@ -2,7 +2,7 @@
 
 🏫 Instituto Superior de Formación Técnica Nº 151
 📚 Carrera de Analista de Sistemas
- ___
+___
  
 ### 🗂️ Folders
 
