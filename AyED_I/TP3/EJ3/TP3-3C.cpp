@@ -115,5 +115,5 @@ void tomarPedido(){
 
 void mostrarTitulo(){
   system("cls"); // Limpiar pantalla.
-  cout << "-----% Sistema de Pedidos -----\n"; 
+  cout << "----- Sistema de Pedidos -----\n"; 
 }
