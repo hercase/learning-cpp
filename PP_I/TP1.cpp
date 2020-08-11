@@ -80,7 +80,7 @@ void songsProgram()
   do {
     showTitle();
     cout << "1. Lista simple de canciones\n";
-    cout << "2. Lista simple de canciones\n";
+    cout << "2. Lista detallada de canciones\n";
     cout << "0. Salir\n\n";
     cout << "Elija una opcion: ";
     cin >> op;
