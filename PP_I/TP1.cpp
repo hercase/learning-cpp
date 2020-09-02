@@ -2,6 +2,7 @@
 /* Escriba una estructura que almacene datos de una canción en formato MP3: Artista, Título, Duración (en segundos), Tamaño del fichero (en KB). Un programa debe pedir los datos de una canción al usuario, almacenarlos en dicha estructura y después mostrarlos en pantalla. Use los ejemplos visto en clase como base para resolver este práctico. Puede adjuntar la solución directamente cómo entrega de esta actividad. */
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -61,9 +62,9 @@ void songsProgram()
     showTitle();
     cout << "CANCION " << i + 1 << " de " << arraySize << " - CARGAR DATOS\n";
     cout << "Titulo: ";
-    cin >> songsList[i].title;
+    getline(cin,songsList[i].title);
     cout << "Artista: ";
-    cin >> songsList[i].artist;
+    getline(cin,songsList[i].artista);
     cout << "Fecha de lanzamiento \n";
     cout << "- Dia: ";
     cin >> songsList[i].release.day;
